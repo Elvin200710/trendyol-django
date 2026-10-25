@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="top-bar">
+    <a href="#">Endirim kuponlarım</a>
+    <a href="#">İnfluenser proqramımıza qoşulun</a>
+    <a href="#">Haqqımızda</a>
+    <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></svg>Kömək &amp; Dəstək</a>
+</div>
+
+<header class="header">
+    <a href="#" class="logo">trendyol</a>
+    <div class="search">
+        <svg class="search-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f27a1a" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="text" placeholder="Məhsul, kateqoriya və ya brend axtar">
+    </div>
+    <div class="actions">
+        <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg> Daxil ol</a>
+        <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.5s-8-5-8-11a4.5 4.5 0 0 1 8-2.8 4.5 4.5 0 0 1 8 2.8c0 6-8 11-8 11z"/></svg> Sevimlilərim</a>
+        <a href="#"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2 11h10l2-8H7"/><circle cx="9" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg> Səbətim</a>
+    </div>
+</header>
+
+<nav class="nav">
+    <a href="#">☰ Kateqoriyalar <span class="badge">Yeni</span></a>
+    <a href="#" class="active">Qadın</a>
+    <a href="#">Kişi</a>
+    <a href="#">Ana &amp; Uşaq</a>
+    <a href="#">Ev &amp; Yaşayış</a>
+    <a href="#">Supermarket</a>
+    <a href="#">Kosmetika</a>
+    <a href="#">Ayaqqabı &amp; Çanta</a>
+    <a href="#">Elektronika</a>
+    <a href="#">Qaynar Məhsullar <span class="badge">Yeni</span></a>
+    <a href="#">Çox Satılanlar <span class="badge">Yeni</span></a>
+</nav>
+<section class="banner">
+    <button class="arrow arrow-left">‹</button>
+    <div class="banner-item active">
+        <img class="banner-img" src="{% static 'images/banner.jpg' %}" alt="banner">
+    </div>
+    <div class="banner-item">
+        <img class="banner-img" src="{% static 'images/banner1.jpg' %}" alt="banner">
+    </div>
+    <div class="banner-item">
+        <img class="banner-img" src="{% static 'images/banner2.jpg' %}" alt="banner">
+    </div>
+    <div class="banner-item">
+        <img class="banner-img" src="{% static 'images/banner3.jpg' %}" alt="banner">
+    </div>
+    <div class="banner-item">
+        <img class="banner-img" src="{% static 'images/banner4.jpg' %}" alt="banner">
+    </div>
+    <div class="banner-item">
+        <img class="banner-img" src="{% static 'images/banner5.jpg' %}" alt="banner">
+    </div>
+    <button class="arrow arrow-right">›</button>
+</section>
+<section class="circles">
+    <a href="#" class="circle-item">
+        <div class="circle"><img src="{% static 'images/circle1.jpg' %}" alt="Qadın Geyimi"></div>
+        <span class="pill">60%-dək Endirim</span>
+        <p>Qadın Geyimi</p>
+    </a>
+    <a href="#" class="circle-item">
+        <div class="circle"><img src="{% static 'images/circle2.jpg' %}" alt="Uşaq Geyimi"></div>
+        <span class="pill">70%-dək Endirim</span>
+        <p>Uşaq Geyimi</p>
+    </a>
+    <a href="#" class="circle-item">
+        <div class="circle"><img src="{% static 'images/circle3.jpg' %}" alt="Supermarket"></div>
+        <span class="pill">50%-dək Endirim</span>
+        <p>Supermarket</p>
+    </a>
+    <a href="#" class="circle-item">
+        <div class="circle"><img src="{% static 'images/circle4.jpg' %}" alt="Kosmetika"></div>
+        <span class="pill">55%-dək endirim</span>
+        <p>Kosmetika</p>
+    </a>
+    <a href="#" class="circle-item">
+        <div class="circle"><img src="{% static 'images/circle5.jpg' %}" alt="Ev və Yaşam"></div>
+        <span class="pill">50%-dək Endirim</span>
+        <p>Ev &amp; Yaşam</p>
+    </a>
+    <a href="#" class="circle-item">
+        <div class="circle"><img src="{% static 'images/circle6.jpg' %}" alt="Elektronika"></div>
+        <span class="pill">50%-dək Endirim</span>
+        <p>Elektronika &amp; Aksesuar</p>
+    </a>
+</section>
+<section class="popular">
+    <div class="popular-head">
+        <h2>Məşhur məhsullar</h2>
+        <a href="#">Hamısını gör ›</a>
+    </div>
+
+    <button class="p-arrow p-left" onclick="document.querySelector('.cards').scrollBy(-560,0)">‹</button>
+    <button class="p-arrow p-right" onclick="document.querySelector('.cards').scrollBy(560,0)">›</button>
+
+    <div class="cards">
+        <div class="card"><div class="card-img"><img src="{% static 'images/product1.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>Bioderma</b> Atoderm Cream Ultra Nemlendirici Krem 500 ml</p><p class="card-sold">♥ 325,1B nəfər Sevimlilərə əlavə edib</p><p class="card-rate"><span class="stars">★★★★★</span> 4.6 (16382)</p><p class="card-extra">əlavə endirim</p><p class="card-price"><span class="off">-33%</span> <b>47,13 ₼</b> <s>70,35 ₼</s></p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/product2.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>The Purest Solutions</b> Yağlı ve Karma Ciltler için Siyah Nokta Bakım Seti</p><p class="card-sold">♥ 904,6B nəfər Sevimlilərə əlavə edib</p><p class="card-rate"><span class="stars">★★★★★</span> 4.5 (35441)</p><p class="card-extra">əlavə endirim</p><p class="card-price"><span class="off">-50%</span> <b>10,19 ₼</b> <s>20,38 ₼</s></p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/product3.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>CALLİEL</b> Leke Karşıtı Etkili, Aydınlatıcı Cilt Tonu Eşitleyici Serum</p><p class="card-sold">♥ 166,8B nəfər Sevimlilərə əlavə edib</p><p class="card-rate"><span class="stars">★★★★★</span> 4.3 (1956)</p><p class="card-extra">Trendyol Plus-a Özəl</p><p class="card-basket">Səbətdə <b>13,50 ₼</b></p><p class="card-old">13,86 ₼ <s>27,73 ₼</s></p></div></div>
+        <div class="card"><div class="card-img"><img src="{% static 'images/product4.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>The Ceel</b> Mor Karbon Diş Beyazlatma Seti</p><p class="card-sold">♥ 632,1B nəfər Sevimlilərə əlavə edib</p><p class="card-rate"><span class="stars">★★★★★</span> 4.1 (24007)</p><p class="card-extra">3 ₼ Kupon</p><p class="card-price"><span class="off">-39%</span> <b>21,78 ₼</b> <s>36,30 ₼</s></p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/product5.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>CALLİEL</b> Gözenek Karşıtı Tonik Seti</p><p class="card-sold">♥ 345,4B nəfər Sevimlilərə əlavə edib</p><p class="card-rate"><span class="stars">★★★★★</span> 4.3 (11356)</p><p class="card-extra">Trendyol Plus-a Özəl</p><p class="card-basket">Səbətdə <b>30,55 ₼</b></p><p class="card-old">31,50 ₼ <s>42 ₼</s></p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/product6.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>Kiperin</b> Çift Hidrolize Multi Kolajen Kapsül | ATP</p><p class="card-sold">♥ 109,5B nəfər Sevimlilərə əlavə edib</p><p class="card-rate"><span class="stars">★★★★★</span> 4.5 (1934)</p><p class="card-extra">əlavə endirim</p><p	class "card-price"><span	class "off">-48%</span> <b>24,89 ₼</b> <s>48,37 ₼</s></p></div></div>
+    </div>
+</section>
+<section class="popular flash">
+    <div class="popular-head">
+        <h2>Flaş Məhsullar</h2>
+        <a href="#">Bütün məhsullar ›</a>
+    </div>
+
+    <button class="p-arrow p-left" onclick="document.querySelector('.flash-cards').scrollBy(-560,0)">‹</button>
+    <button class="p-arrow p-right" onclick="document.querySelector('.flash-cards').scrollBy(560,0)">›</button>
+
+    <div class="cards flash-cards">
+        <div class="card"><div class="card-img"><img src="{% static 'images/flash1.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>The Purest Solutions</b> Yağlı Ve Karma Ciltler için Siyah Nokta Bakım Seti</p><p class="card-sold">3 günda 1B+ məhsul satıldı!</p><p class="card-rate"><span class="stars">★★★★★</span> 4.5 (35441)</p><p class="card-extra">Azərbaycana Özəl Endirim</p><p class="card-price"><span class="off">-50%</span> <b>10,19 ₼</b> <s>20,38 ₼</s></p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/flash2.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>Ocean</b> Vitamin D3K2 Damla - 2'li Avantajlı Paket</p><p class="card-sold">3 günda 500+ məhsul satıldı!</p><p class="card-rate"><span class="stars">★★★★★</span> 4.7 (3652)</p><p class="card-extra">Azərbaycana Özəl Endirim</p><p class="card-price"><span class="off">-50%</span> <b>18,63 ₼</b> <s>37,26 ₼</s></p><p class="card-old">(0,93 ₼ / ml)</p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/flash3.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>The Ceel</b> Mor Karbon Diş Beyazlatma Seti</p><p class="card-sold">3 günda 2B+ məhsul satıldı!</p><p class="card-rate"><span class="stars">★★★★★</span> 4.1 (24007)</p><p class="card-extra">Azərbaycana Özəl Endirim</p><p class="card-price"><span class="off">-39%</span> <b>21,78 ₼</b> <s>36,30 ₼</s></p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/flash4.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>Collagen Forte Platinum</b> Omega-3 Balık Yağı 90 Kapsül</p><p class="card-sold">3 günda 500+ məhsul satıldı!</p><p class="card-rate"><span class="stars">★★★★★</span> 4.5 (20215)</p><p class="card-extra">Azərbaycana Özəl Endirim</p><p class="card-price"><span class="off">-52%</span> <b>16,84 ₼</b> <s>35,78 ₼</s></p><p class="card-old">(0,19 ₼ / kapsül)</p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/flash5.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>Nutraxin</b> Magnezyum Complex 60 Tablet 125 Mg - Bisiglinat</p><p class="card-sold">3 günda 2B+ məhsul satıldı!</p><p class="card-rate"><span class="stars">★★★★★</span> 4.6 (37944)</p><p class="card-extra">Azərbaycana Özəl Endirim</p><p class="card-price"><span class="off">-39%</span> <b>14,30 ₼</b> <s>23,83 ₼</s></p><p class="card-old">(0,24 ₼ / tablet)</p></div></div>
+
+        <div class="card"><div class="card-img"><img src="{% static 'images/flash6.jpg' %}" alt=""><span class="heart">♡</span></div>
+            <div class="card-info"><p class="card-name"><b>Kale Termos</b> 1706 MEYVE PRESİ (INDUSTRIAL TYPE FRUIT PRESS)</p><p class="card-sold">♥ 826 nəfər Sevimlilərə əlavə etdi!</p><p class="card-rate"><span class="stars">★★★★★</span> 4.3 (30)</p><p class="card-price"><span class="off">-30%</span> <b>88,24 ₼</b> <s>126,06 ₼</s></p></div></div>
+    </div>
+</section>
+<section class="tiles">
+    <a href="#" class="tile" style="background:#ebaa33">
+        <img src="{% static 'images/promo1a.jpg' %}" alt=""><img src="{% static 'images/promo1b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Qışı keçirəcəyin bot &amp; çəkmələr</h3><p>Qaynar təkliflər</p></div>
+    </a>
+    <a href="#" class="tile" style="background:#6074bf">
+        <img src="{% static 'images/promo2a.jpg' %}" alt=""><img src="{% static 'images/promo2b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Ən yaxşı qiymətlər</h3><p>Ən çox satılan ayaqqabılar</p></div>
+    </a>
+    <a href="#" class="tile" style="background:#925fa0">
+        <img src="{% static 'images/promo3a.jpg' %}" alt=""><img src="{% static 'images/promo3b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Uşaqların favoritləri</h3><p>Uşaq İdman ayaqqabısı İçin</p></div>
+    </a>
+
+    <a href="#" class="tile" style="background:#925fa0">
+        <span class="tile-date">02 okt - 02 yan</span>
+        <img src="{% static 'images/promo4a.jpg' %}" alt=""><img src="{% static 'images/promo4b.jpg' %}" alt="">
+        <div class="tile-text"><h3>SON GÜNLƏRİN ƏN AŞAĞI QİYMƏTLƏRİ</h3><p>Supermarket</p></div>
+    </a>
+    <a href="#" class="tile" style="background:#6074bf">
+        <div class="tile-flo"><b>FLO</b><small>07 okt - 31 dek</small></div>
+        <img src="{% static 'images/promo5a.jpg' %}" alt=""><img src="{% static 'images/promo5b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Mövsümün olmazsa olmaz ayaqqabıları</h3><p>Rahat idman ayaqqabılarını kəşf et</p></div>
+    </a>
+    <a href="#" class="tile" style="background:#bb4c62">
+        <img src="{% static 'images/promo6a.jpg' %}" alt=""><img src="{% static 'images/promo6b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Trend xəbəri: ballerinalar</h3><p>Xüsusi təkliflər</p></div>
+    </a>
+
+    <a href="#" class="tile" style="background:#6074bf">
+        <span class="tile-date">28 iyl - 28 okt</span>
+        <img src="{% static 'images/promo7a.jpg' %}" alt=""><img src="{% static 'images/promo7b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Kuponlu məhsullar</h3><p>Ən son moda əşyaları</p></div>
+    </a>
+    <a href="#" class="tile" style="background:#925fa0">
+        <img src="{% static 'images/promo8a.jpg' %}" alt=""><img src="{% static 'images/promo8b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Favoritini əldə et</h3><p>Vau edən aksesuarlar</p></div>
+    </a>
+    <a href="#" class="tile" style="background:#eb807f">
+        <span class="tile-date">25 mar - 30 noy</span>
+        <img src="{% static 'images/promo9a.jpg' %}" alt=""><img src="{% static 'images/promo9b.jpg' %}" alt="">
+        <div class="tile-text"><h3>Trendyol Plus-a özəl sərfəli məhsullar</h3><p>Ən son moda əşyaları</p></div>
+    </a>
+</section>
+<script>
+    const items = document.querySelectorAll('.banner-item');
+    let current = 0;
+
+    function showBanner(index) {
+        items[current].classList.remove('active');
+        current = (index + items.length) % items.length;
+        items[current].classList.add('active');
+    }
+
+    document.querySelector('.arrow-left').addEventListener('click', function () {
+        showBanner(current - 1);
+    });
+
+    document.querySelector('.arrow-right').addEventListener('click', function () {
+        showBanner(current + 1);
+    });
+    
+    setInterval(function () { showBanner(current + 1); }, 4000);
+</script>
+
+<script>
+    // 1) Ürək düyməsi
+    document.querySelectorAll('.heart').forEach(function (h) {
+        h.addEventListener('click', function () {
+            var on = h.textContent === '♡';
+            h.textContent = on ? '♥' : '♡';
+            h.style.color = on ? '#e8262d' : '';
+        });
+    });
+
+    // 2) Axtarış: yazdıqca kartları süzür
+    var search = document.querySelector('.search input');
+    search.addEventListener('input', function () {
+        var q = search.value.toLocaleLowerCase('tr');
+        document.querySelectorAll('.card').forEach(function (c) {
+            c.style.display = c.textContent.toLocaleLowerCase('tr').includes(q) ? '' : 'none';
+        });
+    });
+
+    // 3) Səbət sayğacı: hər karta "Səbətə at" düyməsi əlavə edir
+    var cartLink = document.querySelectorAll('.actions a')[2];
+    var countEl = document.createElement('span');
+    countEl.className = 'cart-count';
+    cartLink.appendChild(countEl);
+    var count = 0;
+
+    document.querySelectorAll('.card .card-info').forEach(function (info) {
+        var b = document.createElement('button');
+        b.className = 'add-btn';
+        b.textContent = 'Səbətə at';
+        b.addEventListener('click', function () {
+            count++;
+            countEl.textContent = count;
+            countEl.style.display = 'inline-block';
+        });
+        info.appendChild(b);
+    });
+</script>
+<script>
+    // Yuxarı qayıt düyməsi
+    var topBtn = document.createElement('button');
+    topBtn.className = 'to-top';
+    topBtn.textContent = '↑';
+    document.body.appendChild(topBtn);
+    window.addEventListener('scroll', function () {
+        topBtn.style.display = window.scrollY > 400 ? 'block' : 'none';
+    });
+    topBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Menyuda aktiv bölmə
+    var tabs = document.querySelectorAll('.nav a');
+    tabs.forEach(function (t, i) {
+        if (i === 0) return;
+        t.addEventListener('click', function (e) {
+            e.preventDefault();
+            tabs.forEach(function (x) { x.classList.remove('active'); });
+            t.classList.add('active');
+        });
+    });
+
+    // Kateqoriyalar açılan menyusu
+    var catLink = tabs[0];
+    catLink.classList.add('cat');
+    var menu = document.createElement('div');
+    menu.className = 'cat-menu';
+    ['Qadın', 'Kişi', 'Ana & Uşaq', 'Ev & Yaşayış', 'Supermarket', 'Kosmetika', 'Ayaqqabı & Çanta', 'Elektronika'].forEach(function (name) {
+        var item = document.createElement('div');
+        item.textContent = name;
+        menu.appendChild(item);
+    });
+    catLink.appendChild(menu);
+
+    // Daxil ol pəncərəsi
+    var loginLink = document.querySelectorAll('.actions a')[0];
+    var overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    overlay.innerHTML = '<div class="modal"><span class="close">×</span><h3>Daxil ol</h3><input type="text" id="email" placeholder="E-poçt"><input type="password" placeholder="Şifrə"><button id="login-btn">Daxil ol</button></div>';
+    document.body.appendChild(overlay);
+
+    function closeModal() { overlay.style.display = 'none'; }
+    loginLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        overlay.style.display = 'flex';
+    });
+    overlay.querySelector('.close').addEventListener('click', closeModal);
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
+    });
+    document.getElementById('login-btn').addEventListener('click', function () {
+        var mail = document.getElementById('email').value.trim();
+        if (mail) loginLink.lastChild.textContent = ' ' + mail.split('@')[0];
+        closeModal();
+    });
+</script>
+<script>
+    var cartItems = [];
+    var cartBtn = document.querySelectorAll('.actions a')[2];
+    var favBtn = document.querySelectorAll('.actions a')[1];
+
+    function toNumber(text) {
+        return parseFloat(text.replace(/[^0-9,]/g, '').replace(',', '.')) || 0;
+    }
+
+    function cardPrice(card) {
+        var el = card.querySelector('.card-price b') || card.querySelector('.card-basket b');
+        return el ? toNumber(el.textContent) : 0;
+    }
+
+    // Bildiriş
+    var toast = document.createElement('div');
+    toast.className = 'toast';
+    document.body.appendChild(toast);
+    function showToast(text) {
+        toast.textContent = text;
+        toast.style.opacity = 1;
+        setTimeout(function () { toast.style.opacity = 0; }, 1500);
+    }
+
+    // Səbət paneli
+    var panel = document.createElement('div');
+    panel.className = 'cart-panel';
+    document.body.appendChild(panel);
+
+    function renderCart() {
+        var total = 0;
+        var html = '<h4>Səbətim</h4>';
+        if (cartItems.length === 0) {
+            html += '<p class="cart-empty">Səbət boşdur</p>';
+        }
+        cartItems.forEach(function (item, i) {
+            total += item.price;
+            html += '<div class="cart-row"><span>' + item.name + '</span><b>' + item.price.toFixed(2).replace('.', ',') + ' ₼</b><i data-i="' + i + '">×</i></div>';
+        });
+        html += '<div class="cart-total">Cəmi: <b>' + total.toFixed(2).replace('.', ',') + ' ₼</b></div>';
+        panel.innerHTML = html;
+
+        var countEl = document.querySelector('.cart-count');
+        countEl.textContent = cartItems.length;
+        countEl.style.display = cartItems.length ? 'inline-block' : 'none';
+    }
+    renderCart();
+
+    document.querySelectorAll('.add-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var card = btn.closest('.card');
+            cartItems.push({
+                name: card.querySelector('.card-name').textContent.slice(0, 40),
+                price: cardPrice(card)
+            });
+            renderCart();
+            showToast('Səbətə əlavə olundu');
+        });
+    });
+
+    panel.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (e.target.tagName === 'I') {
+            cartItems.splice(parseInt(e.target.dataset.i), 1);
+            renderCart();
+        }
+    });
+
+    cartBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        panel.classList.toggle('open');
+    });
+    document.addEventListener('click', function () {
+        panel.classList.remove('open');
+    });
+
+    // Sevimlilər sayğacı
+    var favCount = document.createElement('span');
+    favCount.className = 'fav-count';
+    favBtn.appendChild(favCount);
+    document.querySelectorAll('.heart').forEach(function (h) {
+        h.addEventListener('click', function () {
+            var n = 0;
+            document.querySelectorAll('.heart').forEach(function (x) {
+                if (x.textContent === '♥') n++;
+            });
+            favCount.textContent = n;
+            favCount.style.display = n ? 'inline-block' : 'none';
+        });
+    });
+
+   
+</script>
+<script>
+    // Hər karta sabit nömrə ver (sıralama dəyişsə də qalır)
+    document.querySelectorAll('.card').forEach(function (c, i) { c.dataset.id = i; });
+
+    // Sevimlilər paneli
+    var favPanel = document.createElement('div');
+    favPanel.className = 'cart-panel fav-panel';
+    document.body.appendChild(favPanel);
+
+    function favCards() {
+        return Array.from(document.querySelectorAll('.card')).filter(function (c) {
+            return c.querySelector('.heart').textContent === '♥';
+        });
+    }
+
+    function saveState() {
+        try {
+            localStorage.setItem('tr_fav', JSON.stringify(favCards().map(function (c) { return c.dataset.id; })));
+            localStorage.setItem('tr_cart', JSON.stringify(cartItems));
+        } catch (err) {}
+    }
+
+    function renderFav() {
+        var list = favCards();
+        var html = '<h4>Sevimlilərim</h4>';
+        if (list.length === 0) html += '<p class="cart-empty">Sevimli məhsul yoxdur</p>';
+        list.forEach(function (c, i) {
+            var price = cardPrice(c);
+            html += '<div class="cart-row"><span>' + c.querySelector('.card-name').textContent.slice(0, 40) + '</span><b>' + price.toFixed(2).replace('.', ',') + ' ₼</b><em data-i="' + i + '">Səbətə</em><i data-i="' + i + '">×</i></div>';
+        });
+        if (list.length) html += '<div class="cart-total"><button class="clear-btn" id="fav-clear">Hamısını sil</button></div>';
+        favPanel.innerHTML = html;
+        favCount.textContent = list.length;
+        favCount.style.display = list.length ? 'inline-block' : 'none';
+        saveState();
+    }
+
+    // Paneldəki düymələr
+    favPanel.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var list = favCards();
+        var t = e.target;
+        if (t.tagName === 'I') {
+            var h = list[parseInt(t.dataset.i)].querySelector('.heart');
+            h.textContent = '♡';
+            h.style.color = '';
+            renderFav();
+        }
+        if (t.tagName === 'EM') {
+            var card = list[parseInt(t.dataset.i)];
+            cartItems.push({ name: card.querySelector('.card-name').textContent.slice(0, 40), price: cardPrice(card) });
+            renderCart();
+            showToast('Səbətə əlavə olundu');
+        }
+        if (t.id === 'fav-clear') {
+            list.forEach(function (c) {
+                var h = c.querySelector('.heart');
+                h.textContent = '♡';
+                h.style.color = '';
+            });
+            renderFav();
+        }
+    });
+
+    // Aç / bağla
+    favBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        panel.classList.remove('open');
+        favPanel.classList.toggle('open');
+    });
+    cartBtn.addEventListener('click', function () { favPanel.classList.remove('open'); });
+    document.addEventListener('click', function () { favPanel.classList.remove('open'); });
+
+    // Ürəyə basanda panel yenilənsin
+    document.querySelectorAll('.heart').forEach(function (h) {
+        h.addEventListener('click', renderFav);
+    });
+
+    // Səbət dəyişəndə də yadda saxla
+    var origRender = renderCart;
+    renderCart = function () { origRender(); saveState(); };
+
+    // Səhifə açılanda yadda saxlananı bərpa et
+    try {
+        JSON.parse(localStorage.getItem('tr_fav') || '[]').forEach(function (id) {
+            var c = document.querySelector('.card[data-id="' + id + '"]');
+            if (c) {
+                var h = c.querySelector('.heart');
+                h.textContent = '♥';
+                h.style.color = '#e8262d';
+            }
+        });
+        JSON.parse(localStorage.getItem('tr_cart') || '[]').forEach(function (it) { cartItems.push(it); });
+    } catch (err) {}
+    renderCart();
+    renderFav();
+</script>
+<script>
+    // Axtarış təklifləri
+    var searchBox = document.querySelector('.search');
+    var searchInput = document.querySelector('.search input');
+    var sug = document.createElement('div');
+    sug.className = 'suggest';
+    searchBox.appendChild(sug);
+    var popular = ['Ocean', 'Collagen', 'Serum', 'Bioderma', 'Termos', 'Kolajen'];
+
+    function getRecent() {
+        try { return JSON.parse(localStorage.getItem('tr_recent') || '[]'); } catch (err) { return []; }
+    }
+
+    function renderSuggest() {
+        var html = '';
+        var rec = getRecent();
+        if (rec.length) {
+            html += '<h5>Son axtarışlar</h5>';
+            rec.forEach(function (r) { html += '<div class="sg-item" data-q="' + r + '">⟲ ' + r + '</div>'; });
+        }
+        html += '<h5>Məşhur axtarışlar</h5>';
+        popular.forEach(function (p) { html += '<div class="sg-item" data-q="' + p + '">↗ ' + p + '</div>'; });
+        sug.innerHTML = html;
+    }
+
+    searchInput.addEventListener('focus', function () {
+        renderSuggest();
+        sug.style.display = 'block';
+    });
+    searchBox.addEventListener('click', function (e) { e.stopPropagation(); });
+    document.addEventListener('click', function () { sug.style.display = 'none'; });
+    sug.addEventListener('click', function (e) {
+        var q = e.target.dataset.q;
+        if (q) {
+            searchInput.value = q;
+            searchInput.dispatchEvent(new Event('input'));
+            sug.style.display = 'none';
+        }
+    });
+    searchInput.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            var v = searchInput.value.trim().replace(/[<>&"']/g, '');
+            if (v) {
+                var rec = getRecent().filter(function (x) { return x !== v; });
+                rec.unshift(v);
+                try { localStorage.setItem('tr_recent', JSON.stringify(rec.slice(0, 3))); } catch (err) {}
+            }
+            sug.style.display = 'none';
+        }
+    });
+
+    // Daxil ol üzərinə gələndə açılan qutu
+    var accMenu = document.createElement('div');
+    accMenu.className = 'acc-menu';
+    accMenu.innerHTML = '<button class="acc-login">Daxil ol</button><button class="acc-reg">Qeydiyyat</button>';
+    document.querySelector('.actions').appendChild(accMenu);
+
+    var accTimer;
+    function accShow() { clearTimeout(accTimer); accMenu.classList.add('open'); }
+    function accHide() { accTimer = setTimeout(function () { accMenu.classList.remove('open'); }, 200); }
+    loginLink.addEventListener('mouseenter', accShow);
+    loginLink.addEventListener('mouseleave', accHide);
+    accMenu.addEventListener('mouseenter', accShow);
+    accMenu.addEventListener('mouseleave', accHide);
+
+    accMenu.addEventListener('click', function (e) {
+        if (e.target.classList.contains('acc-login')) {
+            accMenu.classList.remove('open');
+            loginLink.click();
+        }
+        if (e.target.classList.contains('acc-reg')) {
+            accMenu.classList.remove('open');
+            showToast('Qeydiyyat səhifəsi hazırlanır');
+        }
+    });
+
+    // Giriş edəndən sonra qutunun məzmunu dəyişsin
+    document.getElementById('login-btn').addEventListener('click', function () {
+        if (document.getElementById('email').value.trim()) {
+            accMenu.innerHTML = '<div class="acc-link">Hesabım</div><div class="acc-link">Sifarişlərim</div><div class="acc-link">Kuponlarım</div>';
+        }
+    });
+</script>
+</body>
+
+</html>
