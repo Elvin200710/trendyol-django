@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.brand }} - Trendyol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <a href="{% url 'index' %}" class="logo">trendyol</a>
+    </header>
+
+    <main class="detail">
+        <p class="crumbs"><a href="{% url 'index' %}">Ana səhifə</a> › {{ product.brand }}</p>
+
+        <div class="detail-box">
+            <div class="detail-img">
+                <img src="{% static product.image %}" alt="{{ product.name }}">
+            </div>
+            <div class="detail-info">
+                <h1><b>{{ product.brand }}</b> {{ product.name }}</h1>
+                <p class="detail-rate"><span class="stars">★★★★★</span> {{ product.rating }} ({{ product.reviews }} rəy)</p>
+                <p class="detail-price"><span class="off">-{{ product.discount }}%</span> <b>{{ product.price }} ₼</b> <s>{{ product.old_price }} ₼</s></p>
+                <button class="detail-btn" onclick="this.textContent='Səbətə əlavə olundu ✓'">Səbətə at</button>
+                <a href="{% url 'index' %}" class="back">← Geri qayıt</a>
+            </div>
+        </div>
+
+        <h2>Oxşar məhsullar</h2>
+        <div class="similar">
+            {% for p in others %}
+            <a href="{% url 'product' p.id %}" class="similar-card">
+                <img src="{% static p.image %}" alt="">
+                <p>{{ p.brand }}</p>
+                <b>{{ p.price }} ₼</b>
+            </a>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
